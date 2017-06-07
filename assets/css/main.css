@@ -1,0 +1,72 @@
+/*
+Description: Réplique du site internet Soledad avec Bootstrap 
+Auteurs : Benoit Laurent // Déborah DELCOURT
+Contact : benoit.jacques.felix@gmail.com // Met ton mail ici Débie
+Url: https://github.com/RQMplays/ // Et ton Github la :p
+*/
+
+/*
+TABLE DES MATIERES :
+Nav Bar
+Header
+Slider
+Articles
+Paginations
+Widgets
+Footer
+*/
+
+/* -- Nav Bar -- */
+/* -- Header -- */
+/* -- Slider -- */
+/* -- Articles -- */
+.image {
+    width: 570px;
+    height: 380px;
+    background-position: center;
+    background-size: cover;
+}
+
+#mom2 {
+    background-image: url('../../img/mom-daughter-2.jpg');
+    
+}
+
+#closet {
+    background-image: url('../../img/closet.jpg');
+}
+
+#styled2 {
+    background-image: url('../../img/styled2.jpg');
+}
+
+#jean {
+    background-image: url('../../img/jean.jpg');
+}
+
+#mom1 {
+    background-image: url('../../img/mom-daughter.jpg');
+}
+
+#tatoo {
+    background-image: url('../../img/tatoo.jpg');
+}
+
+#bag {
+    background-image: url('../../img/bag.jpg');
+}
+
+#beauty {
+    background-image: url('../../img/beauty.jpg');
+}
+
+#photography {
+    background-image: url('../../img/photography.jpg');
+}
+
+#fashion {
+    background-image: url('../../img/fashion.jpg');
+}
+/* -- Paginations -- */
+/* -- Widgets -- */
+/* -- Footer -- */
