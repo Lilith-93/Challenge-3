@@ -1,5 +1,6 @@
 # Challenge 3
-	Déborah DELCOURT et Benoit LAURENT
+
+Déborah DELCOURT et Benoit LAURENT
 	
 ## Nous avons découpé le site comme ceci:
 
@@ -13,13 +14,13 @@
  
 ## Déborah s'occupe de :
 
-	* Nav Bar
-	* Header
-	* Slider
-	* Footer
+* Nav Bar
+* Header
+* Slider
+* Footer
 
 ## Benoit s'occupe de :
 
-	* Articles
-	* Paginations
-	* Widgets
+* Articles
+* Paginations
+* Widgets
