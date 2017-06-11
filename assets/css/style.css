@@ -1,6 +1,6 @@
 @font-face {
- font-family: "PlayfairDisplay";
- src: url("../fonts/PlayfairDisplay-Regular.ttf");
+	font-family: "PlayfairDisplay";
+	src: url("../fonts/PlayfairDisplay-Regular.ttf");
 }
 
 header {
@@ -122,34 +122,41 @@ b::before, b::after{
 }
 
 /********FOOTER********/
+footer {
+	background: #323232;
+}
 /***instagram***/
 .insta {
-width:100%;
-text-align: center;
+	width:100%;
+	text-align: center;
 }
+
+.img-responsive {
+	padding: none;
+	margin: none;
+}
+
 .image {
-display: inline-block;
-position: relative;
-overflow: visible;
-padding: none;
-margin: none;
+	width: auto;
+	height: auto;
+	display: inline-block;
+	position: relative;
+	overflow: visible;
+	padding: none;
+	margin: none;
 }
 .image .cadre {
-position: absolute;
-visibility: hidden;
-top: 5%;
-left: 5%;
-width: 90%;
-height: 90%;
-border: 1px solid white;
-opacity: 0;
+	position: absolute;
+	visibility: hidden;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	border: 1px solid white;
+	opacity: 0;
 }
 .image:hover .cadre {
-visibility: visible;
-z-index: 999;
-opacity: 1;
-}
-.image img {
-width: 100%;
-height: 100%;
+	visibility: visible;
+	z-index: 999;
+	opacity: 1;
 }
