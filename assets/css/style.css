@@ -1,3 +1,8 @@
+@font-face {
+ font-family: "PlayfairDisplay";
+ src: url("../fonts/PlayfairDisplay-Regular.ttf");
+}
+
 header {
 	padding-top: 70px;
 	text-align: center;
@@ -7,7 +12,7 @@ header {
 b{
 	display: inline-block;
 	margin: 20px 0px 50px 0px;
-	font-family: "Lato-BlackItalic.otf";
+	font-family: "Lato.otf";
 	font-size: 18px;
 	font-style: italic;
 	font-weight: bold;
@@ -24,6 +29,7 @@ b::before, b::after{
 
 /********GRANDE IMAGE********/
 .carou {
+	width: 100%;
 	display: flex;
 	background: url('../../img/mom-daughter.jpg') center no-repeat;
 	height: 800px;	
@@ -35,6 +41,7 @@ b::before, b::after{
 	height: 230px;
 	margin: auto;
 	background: white;
+	color: #dedede;
 }
 
 .bor {
@@ -44,7 +51,7 @@ b::before, b::after{
 	border: 1px solid #dedede;
 }
 
-.date {
+.dates {
 	width: 150px;
 	margin: auto;
 	margin-top: -20px;
@@ -66,12 +73,83 @@ b::before, b::after{
 	color: #a60606;
 }
 
+.losange {
+    display: inline-block;
+    border: 1px solid #a60505;
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+    margin-left: 11px;
+    margin-right: 11px;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
 .tenue {
 	margin: auto;
+	padding-top: 10px;
 	color: #323232;
 	text-transform: uppercase;
 	text-align: center;
-	font-family: "PlayfairDisplay";
-	font-size: 40px;
+	font-weight: 500;
+	font-family: "PlayfairDisplay", serif;
+	font-size: 35px;
 }
 
+.dern {
+	margin-top: 15px;
+	color: #989898; 
+	text-align: center;
+	font-size: 17px;
+}
+
+.author {
+	font-style: italic; 
+}
+.author a {
+	color: #323232;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.author a:hover {
+	color: #a60606;
+	text-decoration: none;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+
+/********FOOTER********/
+/***instagram***/
+.insta {
+width:100%;
+text-align: center;
+}
+.image {
+display: inline-block;
+position: relative;
+overflow: visible;
+padding: none;
+margin: none;
+}
+.image .cadre {
+position: absolute;
+visibility: hidden;
+top: 5%;
+left: 5%;
+width: 90%;
+height: 90%;
+border: 1px solid white;
+opacity: 0;
+}
+.image:hover .cadre {
+visibility: visible;
+z-index: 999;
+opacity: 1;
+}
+.image img {
+width: 100%;
+height: 100%;
+}
