@@ -3,6 +3,30 @@
 	src: url("../fonts/PlayfairDisplay-Regular.ttf");
 }
 
+/********NAVIGATION********/
+nav {
+	position: fixed;
+	top: 0px;
+	padding: 20px 0px 20px 0px;
+	background: black;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: "PlayfairDisplay-Black";
+	letter-spacing: 2px;
+}
+nav a{
+	color: grey;
+	text-decoration: none;
+}
+nav a:hover{
+	color: white;
+	text-decoration: underline white;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+
+/********Header********/
 header {
 	padding-top: 70px;
 	text-align: center;
