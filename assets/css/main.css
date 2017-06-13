@@ -493,7 +493,7 @@ li a:hover {
 /* -- Widgets -- */
 .col-md-4 {
     width: 370px;
-    margin: 0 15px;
+    margin: 0 15px 30px 15px;
 }   
 
 .col-md-4:first-child {
