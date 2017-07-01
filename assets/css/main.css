@@ -346,7 +346,6 @@ b::before, b::after{
 
 .mom2 {
     background-image: url('../../img/mom-daughter-2.jpg');
-
 }
 
 .closet {
@@ -759,41 +758,144 @@ footer {
 
 /* -- Instagram -- */
 .insta {
+  background: #212121;
+  position: relative;
 	width:100%;
 	text-align: center;
 }
 
-.img-responsive {
-	padding: none;
-	margin: none;
+.instagram-title {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  line-height: 50px;
+  margin: -25px 0 0 0;
+  left: 0;
+  width: 100%;
 }
 
-.image-insta {
-	width: auto;
-	height: auto;
-	display: inline-block;
-	position: relative;
-	overflow: visible;
-	padding: none;
-	margin: none;
+.instagram-title span {
+  display: inline-block;
+  padding: 0 20px;
+  background: #fff;
+  color: #313131;
+  font-family: "PlayfairDisplay", serif;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  vertical align: top;
+  z-index: 10;
+  position: relative;
 }
-.image-insta .cadre {
-	position: absolute;
-	visibility: hidden;
-	top: 5%;
-	left: 5%;
-	width: 90%;
-	height: 90%;
-	border: 1px solid white;
-	opacity: 0;
+
+.insta .instagram-images {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
-.image-insta:hover .cadre {
-	visibility: visible;
-	z-index: 999;
-	opacity: 1;
+
+.insta .instagram-images li {
+  position: relative;
+  display: inline-block;
+  width: 12.5%;
+  padding: 0 0 12.5% 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.insta .instagram-images li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  opacity: 1;
+  transition: .4s ease-in-out;
+}
+
+.insta .instagram-images li a:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  opacity: 0;
+  transform: rotateX(-90deg);
+  transition: .4s ease-in-out;
+}
+
+.insta .instagram-images li a:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  opacity: 0;
+  transform: rotateY(-90deg);
+  transition: .4s ease-in-out;
+}
+
+.insta .instagram-images li a:hover:after, .insta .instagram-images li a:hover:before {
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: .4s ease-in-out;
+}
+
+.insta .instagram-images li a:hover {
+  opacity: 0.8;
+  transition: .4s ease-in-out;
+}
+
+.song1 {
+    background-image: url('../../img/song1.jpg');
+}
+
+.song2 {
+    background-image: url('../../img/song2.jpg');
+}
+
+.song3 {
+    background-image: url('../../img/song3.jpg');
+}
+
+.song4 {
+    background-image: url('../../img/song4.jpg');
+}
+
+.song5 {
+    background-image: url('../../img/song5.jpg');
+}
+
+.song6 {
+    background-image: url('../../img/song6.jpg');
+}
+
+.song7 {
+    background-image: url('../../img/song7.jpg');
+}
+
+.song8 {
+    background-image: url('../../img/song8.jpg');
 }
 
 /*--barre social--*/
+footer {
+  width:100%;
+	text-align: center;
+}
+
 .soc {
 
 	padding: 30px 0px 15px 0px;
