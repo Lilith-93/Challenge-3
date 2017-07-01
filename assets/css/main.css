@@ -23,6 +23,11 @@ Footer
 }
 
 @font-face {
+  font-family: "Lato-Italic";
+  src: url("../fonts/Lato-Italic.ttf");
+}
+
+@font-face {
   font-family: "PlayfairDisplay";
   src: url("../fonts/PlayfairDisplay-Bold.ttf");
 }
@@ -30,8 +35,14 @@ Footer
 @font-face {
   font-family: "PT Serif";
   src: url("../fonts/PT_Serif-Web-BoldItalic.ttf");
-
 }
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.ttf");
+}
+
+
 
 
 
@@ -816,7 +827,7 @@ footer {
   background-size: cover;
   background-position: center center;
   opacity: 1;
-  transition: .4s ease-in-out;
+  transition: .35s ease-in-out;
 }
 
 .insta .instagram-images li a:before {
@@ -830,7 +841,7 @@ footer {
   border-left: 1px solid #fff;
   opacity: 0;
   transform: rotateX(-90deg);
-  transition: .4s ease-in-out;
+  transition: .35s ease-in-out;
 }
 
 .insta .instagram-images li a:after {
@@ -844,18 +855,18 @@ footer {
   border-bottom: 1px solid #fff;
   opacity: 0;
   transform: rotateY(-90deg);
-  transition: .4s ease-in-out;
+  transition: .35s ease-in-out;
 }
 
 .insta .instagram-images li a:hover:after, .insta .instagram-images li a:hover:before {
   opacity: 1;
   transform: rotate(0deg);
-  transition: .4s ease-in-out;
+  transition: .35s ease-in-out;
 }
 
 .insta .instagram-images li a:hover {
   opacity: 0.8;
-  transition: .4s ease-in-out;
+  transition: .35s ease-in-out;
 }
 
 .song1 {
@@ -897,7 +908,6 @@ footer {
 }
 
 .soc {
-
 	padding: 30px 0px 15px 0px;
 	margin: 0 auto;
 	text-transform: uppercase;
@@ -921,6 +931,10 @@ footer {
   float: none;
   margin-right: 36px;
   margin-bottom: 15px;
+}
+
+.soc li:last-child {
+  margin-right: 0;
 }
 
 .soc span {
@@ -982,24 +996,57 @@ footer {
 }
 
 /* -- Logo blanc --*/
-.logo{
-	margin-top: 30px;
-    filter: invert(1);
-    -webkit-filter: invert(1);
-    -moz-filter: invert(1);
-    -o-filter: invert(1);
-    -ms-filter: invert(1);
+.footer-logo-copyright {
+  position: relative;
+  padding: 40px 0 73px 0;
+}
+
+.footer-logo {
+  margin-bottom: 32px;
 }
 
 .copy {
-	margin-top: 20px;
-	color: white;
+  font-family: "Lato-Italic", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+	color: #999;
 	font-style: italic;
 }
 
-/* -- Ancre -- */
-.ancre a {
-	color: #989898;
-	text-transform: uppercase;
-	font-weight: bold;
+/* -- Back to Top -- */
+#go-to-top {
+  position: absolute;
+  bottom: 17px;
+  width: 100%;
+  height: auto;
+  display: block;
+  left: 0;
+  text-align: center;
+}
+
+#go-to-top i {
+  display: inline-block;
+  font-size: 18px;
+  z-index: 5;
+  position: relative;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+#go-to-top span {
+  color: #999;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  line-height: 1;
+  display: inline-block;
+  transition: .3s;
+  margin: 0;
+  padding: 0;
+}
+
+#go-to-top:hover span {
+  color: white;
+  transition: .3s;
 }
