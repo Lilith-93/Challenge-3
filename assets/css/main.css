@@ -24,7 +24,7 @@ Footer
 
 @font-face {
   font-family: "PlayfairDisplay";
-  src: url("../fonts/PlayfairDisplay-Regular.ttf");
+  src: url("../fonts/PlayfairDisplay-Bold.ttf");
 }
 
 body {
@@ -42,7 +42,8 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-family: "PlayfairDisplay-Black";
+	font-family: "PlayfairDisplay";
+  font-style: normal;
 	letter-spacing: 2px;
     z-index: 100;
 }
@@ -178,6 +179,7 @@ b::before, b::after{
 	text-align: center;
 	font-weight: 500;
 	font-family: "PlayfairDisplay", serif;
+  font-style: normal;
 	font-size: 35px;
 }
 
@@ -316,6 +318,7 @@ b::before, b::after{
 
 h2 {
     font-family: "PlayfairDisplay", serif;
+    font-style: normal;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -468,7 +471,7 @@ p {
     margin-right: 0;
 }
 
-li span {
+.pagination li span {
     display: inline-block;
     color: #fff;
     background: #a60505;
@@ -481,10 +484,11 @@ li span {
     font-size: 14px;
 }
 
-li a {
+.pagination li a {
     display: inline-block;
     color: #888;
     font-family: "PlayfairDisplay", serif;
+    font-style: normal;
     font-weight: bold;
     border: 1px solid #DEDEDE;
     padding: 0 5px;
@@ -577,6 +581,7 @@ li a:hover {
 
 h3 {
     font-family: "PlayfairDisplay", serif;
+    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     color: #313131;
@@ -602,6 +607,7 @@ h3:after {
 h4 {
     display: inline-block;
     font-family: "PlayfairDisplay", serif;
+    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 0px;
@@ -647,7 +653,7 @@ h4 > a:hover {
 
 /* -- Footer -- */
 footer {
-	background: #323232;
+	background: #212121;
 }
 
 /* -- Instagram -- */
@@ -687,31 +693,94 @@ footer {
 }
 
 /*--barre social--*/
+.wraper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 .soc {
-	width: 1220px;
-	padding: 20px 0px 20px 0px;
-	margin: auto;
-	border-bottom: 1px solid #dedede;
+
+	padding: 30px 0px 15px 0px;
+	margin: 0 auto;
 	text-transform: uppercase;
-	font-family: 'lato';
-	font-size: 20px;
-	font-weight: bold;
-	font-family: "PlayfairDisplay-Black";
-	letter-spacing: 2px;
+	font-family: "PlayfairDisplay", serif;
+  font-style: normal;
+  border-bottom: 1px solid #4A4A4A;
+  text-align: center;
 }
+
+.soc ul {
+  display: inline-block;
+  li-style: none;
+  vertical-align: top;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.soc li {
+  display: inline-block;
+  float: none;
+  margin-right: 36px;
+  margin-bottom: 15px;
+}
+
+.soc span {
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 14px;
+  vertical-align: top;
+  background: none;
+  border: none;
+  color: #999;
+  transition: .3s;
+}
+
 .soc a {
-	color: #989898;
+	color: #999;
+  display: inline-block;
+  line-height: 36px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  width: none;
+  height: none;
 }
+
+.soc i {
+	width: 36px;
+	height: 36px;
+  font-size: 14px;
+  line-height: 34px;
+  display: inline-block;
+	border-radius: 50%;
+  background: none;
+	border: 1px solid #999;
+  vertical-align: top;
+  transition: .3s;
+}
+
 .soc a:hover {
 	color: white;
 	text-decoration: none;
+  transition: .3s;
 }
-.soc i {
-	width: 20px;
-	height: 20px;
-	border-radius: 100px;
-	border: 1px solid;
-	text-align: center;
+
+.soc a:hover i {
+  background: white;
+  color: #212121;
+  border-color: white;
+  transition: .3s;
+}
+
+.soc a:hover span {
+  color: white;
+  transition: .3s;
 }
 
 /* -- Logo blanc --*/
