@@ -520,6 +520,7 @@ p {
 }
 
 .share > a {
+    position: relative;
     color: #313131;
     margin-left: 10px;
     transition: .3s;
@@ -539,6 +540,47 @@ p {
 
 .share > a:first-child {
     margin-left: 0;
+}
+
+.share > a .pop-up {
+  position: absolute;
+  display: inline-block;
+  font-size: 9px;
+  font-family: "PlayfairDisplay", serif;
+  font-weight: normal;
+  background: #313131;
+  color: #fff;
+  height: 20px;
+  line-height: 20px;
+  white-space: nowrap;
+  text-align: center;
+  width: 60px;
+  left: 50%;
+  margin-left: -30px;
+  opacity: 0;
+  bottom: -45px;
+  visibility: hidden;
+  transition: .2s ease-in-out;
+}
+
+.share > a .pop-up:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 7px solid #313131;
+  top: -7px;
+  left: 50%;
+  margin-left: -4px;
+}
+
+.share > a:hover .pop-up {
+  opacity: 1;
+  bottom: -30px;
+  visibility: visible;
+  transition: .2s ease-in-out;
 }
 
 .share::before {
