@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- Description: Réplique du site internet Soledad avec Bootstrap 
+<!-- Description: Réplique du site internet Soledad avec Bootstrap
      Auteurs : Benoit Laurent // Déborah DELCOURT
      Contact : benoit.jacques.felix@gmail.com // deborah.delcourt@free.fr
      Url: https://github.com/RQMplays/ // https://github.com/Lilith-93/ -->
@@ -11,96 +11,429 @@
         <title>Soledad – Best Fashion Lifestyle Blog WordPress Themes 2016</title>
         <link href="assets/css/bootstrap.css" rel="stylesheet"> <!-- Lien vers la feuille de style Bootstrap -->
         <link href="assets/css/font-awesome.min.css" rel="stylesheet"> <!-- Lien vers la feuille de style Font-Awesome -->
-		<link href="assets/fonts/PlayfairDisplay-Regular.ttf" rel="stylesheet"> <!-- Lien vers PlayfairDisplay -->
-		<link href="assets/fonts/Lato-Regular.ttf" rel="stylesheet"> <!-- Lien vers Lato -->
         <link href="assets/css/main.css" rel="stylesheet"> <!-- Lien vers la feuille de style principale -->
-		<link href="assets/css/style.css" rel="stylesheet"> <!-- Lien vers la feuille de style principale -->
+
     </head>
 
     <body>
         <!-- Nav Bar -->
-	     <nav class="col-lg-12">
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Style</a>
-            <a href="#">Travel</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Shop</a>
-            <a href="#">Headers</a>
-            <a href="#">Contact Me</a>
-            <a href="#">Purchase</a>
-            <a href="#"><i class="fa fa-search" aria-hidden="true">fa-search</i></a>
+        <div class="sticky-navbar"></div>
+	      <nav class="col-lg-12 menu">
+          <div class="wraper">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Style</a></li>
+              <li><a href="#">Travel</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Headers</a></li>
+              <li><a href="#">Contact Me</a></li>
+              <li><a href="#">Purchase</a></li>
+            </ul>
+            <div class="top-search">
+              <a href="#"><i class="fa fa-search"></i></a>
+            </div>
+          </div>
         </nav>
         <!-- Header -->
-				<header>
+				<header id="top">
 					<img src="img/logo-f.png"/></br>
 					<b>for fashion & life style bloggers</b>
 				</header>
 		<!-- Slider -->
-				<div class="carou">
-					<div class="pan">
-						<div class="bor">
-							<div class="dates"> 
-								Juin 10, 2017
-							</div>
-							<div class="lien">
-								<a href="#">travel</a> <div class="losange"></div> <a href="#">trendy</a>
-							</div>
-							<div class="tenue">
-								Wandering in Manhattan
-							</div>
-							<div class="dern">
-								<span class="author">by <a href="#">Marina</a></span> | <span class="comm">3 comments</span>
-							</div>
+				<div id="slider">
+                    <figure>
+                        <img src="img/mom-daughter.jpg" />
+                        <img src="img/jean.jpg" />
+                        <img src="img/photography.jpg" />
+                    </figure>
+                </div>
+				<div class="pan">
+					<div class="bor">
+						<div class="dates">
+							Juin 10, 2017
+						</div>
+						<div class="lien">
+							<a href="#">travel</a> <div class="losange"></div> <a href="#">trendy</a>
+						</div>
+						<div class="tenue">
+							Wandering in Manhattan
+						</div>
+						<div class="dern">
+							<span class="author">by <a href="#">Marina</a></span><span class="comm">3 comments</span>
 						</div>
 					</div>
-				</div>    
+				</div>
+				
+        <!-- Articles -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#"><div class="image mom2"></div></a>
+                    <div class="display-category">
+                        <a href="#" class="category">Street Style</a>
+                    </div>
+                    <a href="#" class="title"><h2>On street with my daughter</h2></a>
+                    <div class="post-meta">
+                        <span class="author">by <a href="#">Marina</a></span>
+                        <span class="date">September 3, 2015</span>
+                    </div>
+                    <div class="separation"></div>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In debitis illum,
+                         alias nostrum officiis enim porro laudantium culpa reiciendis eius qui soluta est iusto explicabo consequuntur quam repudiandae dolorum odit.</p>
+                    <div class="bottom">
+                        <div class="share">
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <a href="#"><div class="image closet"></div></a>
+                    <div class="display-category">
+                        <a href="#" class="category">Outfits</a>
+                    </div>
+                    <a href="#" class="title"><h2>A look at my closet</h2></a>
+                    <div class="post-meta">
+                        <span class="author">by <a href="#">Marina</a></span>
+                        <span class="date">September 3, 2015</span>
+                    </div>
+                    <div class="separation"></div>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In debitis illum,
+                         alias nostrum officiis enim porro laudantium culpa reiciendis eius qui soluta est iusto explicabo consequuntur quam repudiandae dolorum odit.</p>
+                    <div class="bottom">
+                        <div class="share">
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#"><div class="image styled2"></div></a>
+                    <div class="display-category">
+                        <a href="#" class="category">Street Style</a>
+                        <div class="losange"></div>
+                        <a href="#" class="category">Travel</a>
+                    </div>
+                    <a href="#" class="title"><h2>Sunday out with my friends</h2></a>
+                    <div class="post-meta">
+                        <span class="author">by <a href="#">Marina</a></span>
+                        <span class="date">September 3, 2015</span>
+                    </div>
+                    <div class="separation"></div>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In debitis illum,
+                         alias nostrum officiis enim porro laudantium culpa reiciendis eius qui soluta est iusto explicabo consequuntur quam repudiandae dolorum odit.</p>
+                    <div class="bottom">
+                        <div class="share">
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <a href="#"><div class="image jean"></div></a>
+                    <div class="display-category">
+                        <a href="#" class="category">Trendy</a>
+                    </div>
+                    <a href="#" class="title"><h2>In style - Jean Lover</h2></a>
+                    <div class="post-meta">
+                        <span class="author">by <a href="#">Marina</a></span>
+                        <span class="date">September 3, 2015</span>
+                    </div>
+                    <div class="separation"></div>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In debitis illum,
+                         alias nostrum officiis enim porro laudantium culpa reiciendis eius qui soluta est iusto explicabo consequuntur quam repudiandae dolorum odit.</p>
+                    <div class="bottom">
+                        <div class="share">
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#"><div class="image mom1"></div></a>
+                    <div class="display-category">
+                        <a href="#" class="category">Travel</a>
+                        <div class="losange"></div>
+                        <a href="#" class="category">Trendy</a>
+                    </div>
+                    <a href="#" class="title"><h2>Wandering in manhattan</h2></a>
+                    <div class="post-meta">
+                        <span class="author">by <a href="#">Marina</a></span>
+                        <span class="date">September 3, 2015</span>
+                    </div>
+                    <div class="separation"></div>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In debitis illum,
+                         alias nostrum officiis enim porro laudantium culpa reiciendis eius qui soluta est iusto explicabo consequuntur quam repudiandae dolorum odit.</p>
+                    <div class="bottom">
+                        <div class="share">
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <a href="#"  class="title"><div class="image tattoo"></div></a>
+                    <div class="display-category">
+                        <a href="#" class="category">Street Style</a>
+                    </div>
+                    <a href="#" class="title"><h2>Girl with tattoo</h2></a>
+                    <div class="post-meta">
+                        <span class="author">by <a href="#">Marina</a></span>
+                        <span class="date">September 3, 2015</span>
+                    </div>
+                    <div class="separation"></div>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In debitis illum,
+                         alias nostrum officiis enim porro laudantium culpa reiciendis eius qui soluta est iusto explicabo consequuntur quam repudiandae dolorum odit.</p>
+                    <div class="bottom">
+                        <div class="share">
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#"><div class="image bag"></div></a>
+                    <div class="display-category">
+                        <a href="#" class="category">Trendy</a>
+                    </div>
+                    <a href="#" class="title"><h2>My favorite bag</h2></a>
+                    <div class="post-meta">
+                        <span class="author">by <a href="#">Marina</a></span>
+                        <span class="date">September 3, 2015</span>
+                    </div>
+                    <div class="separation"></div>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In debitis illum,
+                         alias nostrum officiis enim porro laudantium culpa reiciendis eius qui soluta est iusto explicabo consequuntur quam repudiandae dolorum odit.</p>
+                    <div class="bottom">
+                        <div class="share">
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <a href="http://imagizer.imageshack.us/a/img910/9504/kMNnAY.gif"><div class="image beauty"></div></a>
+                    <div class="display-category">
+                        <a href="#" class="category">Street Style</a>
+                    </div>
+                    <a href="http://imagizer.imageshack.us/a/img910/9504/kMNnAY.gif" class="title"><h2>Winter is coming</h2></a>
+                    <div class="post-meta">
+                        <span class="author">by <a href="#">Marina</a></span>
+                        <span class="date">September 3, 2015</span>
+                    </div>
+                    <div class="separation"></div>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In debitis illum,
+                         alias nostrum officiis enim porro laudantium culpa reiciendis eius qui soluta est iusto explicabo consequuntur quam repudiandae dolorum odit.</p>
+                    <div class="bottom">
+                        <div class="share">
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#"><div class="image photography"></div></a>
+                    <div class="display-category">
+                        <a href="#" class="category">Travel</a>
+                        <div class="losange"></div>
+                        <a href="#" class="category">Trendy</a>
+                    </div>
+                    <a href="#" class="title"><h2>September - NYC photoshoot</h2></a>
+                    <div class="post-meta">
+                        <span class="author">by <a href="#">Marina</a></span>
+                        <span class="date">September 3, 2015</span>
+                    </div>
+                    <div class="separation"></div>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In debitis illum,
+                         alias nostrum officiis enim porro laudantium culpa reiciendis eius qui soluta est iusto explicabo consequuntur quam repudiandae dolorum odit.</p>
+                    <div class="bottom">
+                        <div class="share">
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <a href="#"><div class="image fashion"></div></a>
+                    <div class="display-category">
+                        <a href="#" class="category">Outfits</a>
+                        <div class="losange"></div>
+                        <a href="#" class="category">Trendy</a>
+                    </div>
+                    <a href="#" class="title"><h2>Monday outfit</h2></a>
+                    <div class="post-meta">
+                        <span class="author">by <a href="#">Marina</a></span>
+                        <span class="date">September 3, 2015</span>
+                    </div>
+                    <div class="separation"></div>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In debitis illum,
+                         alias nostrum officiis enim porro laudantium culpa reiciendis eius qui soluta est iusto explicabo consequuntur quam repudiandae dolorum odit.</p>
+                    <div class="bottom">
+                        <div class="share">
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Paginations -->
+            <nav class="col-md-12 pagination">
+                <ul>
+                    <li>
+                        <span>1</span>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-angle-right"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div><!-- div.container end -->
+        <div class="clear-footer"></div>
+        <div class="container">
+            <!-- Widgets -->
+            <div class="col-md-4">
+                <h3>About Me</h3>
+                <div class="widget-image about"></div>
+                <p>Hi there, I'm Marina - a girl love fashion and love to express herself through style and clothes. I hope my style will be the inspirations for girls around the world.</p>
+                </div>
+            <div class="col-md-4">
+                <h3>Recent Posts</h3>
+                <div class="col-md-12">
+                    <a href="#"><div class="miniature-img mom2"></div></a>
+                    <h4><a href="#">On Street with my Daughter</a></h4>
+                    <span class="date">September 3, 2015</span>
+                </div>
+                <div class="col-md-12">
+                    <a href="#"><div class="miniature-img closet"></div></a>
+                    <h4><a href="#">A Look at my Closet</a></h4>
+                    <span class="date">September 3, 2015</span>
+                </div>
+                <div class="col-md-12">
+                    <a href="#"><div class="miniature-img styled2"></div></a>
+                    <h4><a href="#">Sunday Out with Friends</a></h4>
+                    <span class="date">September 3, 2015</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>Instagram Slider</h3>
+                <div class="full-img man"></div>
+            </div>
+        </div><!-- div.container end -->
+
+
+
         <!-- Footer -->
 				<footer class="insta">
-					<row>
-						<div class="image">
+						<div class="image-insta">
 							<img src="http://lorempixel.com/output/fashion-q-c-165-165-3.jpg" class="img-responsive">
 							<div class="cadre">
 							</div>
 						</div>
-						<div class="image">
+						<div class="image-insta">
 							<img src="http://lorempixel.com/output/fashion-q-c-165-165-1.jpg" class="img-responsive">
 							<div class="cadre">
 							</div>
 						</div>
-						<div class="image">
+						<div class="image-insta">
 							<img src="http://lorempixel.com/output/fashion-q-c-165-165-4.jpg" class="img-responsive">
 							<div class="cadre">
 							</div>
 						</div>
-						<div class="image">
+						<div class="image-insta">
 							<img src="http://lorempixel.com/output/fashion-q-c-165-165-9.jpg" class="img-responsive">
 							<div class="cadre">
 							</div>
 						</div>
-						<div class="image">
+						<div class="image-insta">
 							<img src="http://lorempixel.com/output/fashion-q-c-165-165-8.jpg" class="img-responsive">
 							<div class="cadre">
 							</div>
 						</div>
-						<div class="image">
+						<div class="image-insta">
 							<img src="http://lorempixel.com/output/people-q-c-165-165-4.jpg" class="img-responsive">
 							<div class="cadre">
 							</div>
 						</div>
-						<div class="image">
+						<div class="image-insta">
 							<img src="http://lorempixel.com/output/people-q-c-165-165-7.jpg" class="img-responsive">
 							<div class="cadre">
 							</div>
 						</div>
-						<div class="image">
+						<div class="image-insta">
 							<img src="http://lorempixel.com/output/people-q-c-165-165-9.jpg" class="img-responsive">
 							<div class="cadre">
 							</div>
 						</div>
-					</row>
-					<div class="soc">
-					<i class="fa fa-facebook"></i>
+
+          <div class="wraper">
+  					<div class="soc">
+              <ul>
+        				<li><a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+        				<li><a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+        				<li><a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a></li>
+        				<li><a href="#"><i class="fa fa-pinterest"></i><span>Pinterest</span></a></li>
+        				<li><a href="#"><i class="fa fa-flickr"></i><span>Flickr</span></a></li>
+        				<li><a href="#"><i class="fa fa-tumblr"></i><span>Tumblr</span></a></li>
+        				<li><a href="#"><i class="fa fa-youtube-play"></i><span>Youtube</span></a></li>
+              </ul>
+  					</div>
+          </div>
+
+					<img src="img/logo-f.png" class="logo"/>
+					<div class="copy">@2016 - PenciDesign. All Right Reserved. Designed and Developed by PenciDesign</div>
+					<div class="ancre">
+						<a href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i><br/>
+						Back to top</a>
 					</div>
 				</footer>
     </body>
