@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+  $('a.back-to-top').click(function(){
+
+    $('body').animate({
+      scrollTop: 0
+    }, 700);
+
+    return false;
+
+  });
+
+
   $('.slider-button-next').click(function(){
 
     // Prépare la prochaine images
@@ -19,9 +30,9 @@ $(document).ready(function(){
       $('.is-hidden').removeClass('left');
     }, 450);
 
-
-
   });
+
+
 
   $('.slider-button-prev').bind('click', function(){
 
@@ -43,5 +54,8 @@ $(document).ready(function(){
     }, 450);
 
   });
+
+
+
 
 });

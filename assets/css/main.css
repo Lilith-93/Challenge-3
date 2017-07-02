@@ -29,7 +29,7 @@ Footer
 
 @font-face {
   font-family: "PlayfairDisplay";
-  src: url("../fonts/PlayfairDisplay-Bold.ttf");
+  src: url("../fonts/PlayfairDisplay-Regular.ttf");
 }
 
 @font-face {
@@ -934,6 +934,7 @@ footer {
 .insta .instagram-images {
   width: 100%;
   display: flex;
+  -moz-display: flex;
   padding: 0;
   margin: 0;
 }
@@ -1152,6 +1153,10 @@ footer {
   display: block;
   left: 0;
   text-align: center;
+}
+
+#go-to-top a {
+  display: inline-block;
 }
 
 #go-to-top i {
