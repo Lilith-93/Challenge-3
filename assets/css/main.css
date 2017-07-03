@@ -42,10 +42,6 @@ Footer
   src: url("../fonts/Raleway-Bold.ttf");
 }
 
-
-
-
-
 body {
     font-family: "Lato", sans-serif;
     font-size: 14px;
@@ -902,6 +898,8 @@ footer {
   background: #212121;
   position: relative;
 	width:100%;
+  display: block;
+  clear: both;
 	text-align: center;
 }
 
@@ -933,10 +931,11 @@ footer {
 
 .insta .instagram-images {
   width: 100%;
+  height: 100%;
   display: flex;
-  -moz-display: flex;
   padding: 0;
   margin: 0;
+  z-index: 1;
 }
 
 .insta .instagram-images li {
